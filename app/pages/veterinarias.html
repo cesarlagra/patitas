@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>veterinarias</title>
+</head>
+<body>
+    <header>
+        <div class="imagen">
+                <img class="logo" src="img/patitas.png" alt="logo de patitas">
+            </div>
+            <nav >
+        <ul class="navega">
+            <li><a href="/rescates" class="hideOnMobile">Rescates</li></a>
+            <li><a href="/" class="hideOnMobile">Inicio</li></a>
+            <li><a href="/castracion" class="hideOnMobile">Jornada de Castracion</li></a>
+            <li><a href="/chat" class="hideOnMobile">Chat</li></a>
+            <li onclick="ShowSideBar()"><a href="#"></a><svg class="IconoNav" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></li>
+            <a href="/login"><button class="btn">ENTRAR</button></a>
+            <a href="/register"><Button class="btn">REGISTRAR</Button></a>
+            <ul class="sidebar">
+                <li onclick="HideSidebar()"> <a href="#"><svg class="IconoNav" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="/rescates">Rescates</li></a>
+                <li><a href="/">Inicio</li></a>
+                <li><a href="/castracion">Jornada de Castracion</li></a>
+                <li><a href="/chat">Chat</li></a>
+                <a href="/login"><button class="btn">  ENTRAR</button></a>
+                <a href="/register"><Button class="btn">REGISTRAR</Button></a>
+            </ul>
+    
+        <script> function ShowSideBar() {
+            const sidebar = document.querySelector ('.sidebar')
+            sidebar.style.display= 'flex'
+        }
+        function HideSidebar(){
+            const sidebar= document.querySelector ('.sidebar')
+            sidebar.style.display= 'none'
+        }
+            </script>
+</header>
+<h1>PROXIMANTE UN MAPA CON Veterinarias CERCA </h1>
+</body>
+</html>

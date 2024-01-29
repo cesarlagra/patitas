@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"> 
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Entrar</title>
+
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="login-form" action="">
+            <h1>Entrar</h1>
+            <div class="input-box">
+                <label for="user" class="label">Usuario</label>
+                <input type="text"id="user" placeholder="Usuario" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <label for="password" class="label">Contraseña</label>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+                
+                <div class="remember-forgot">
+                <label><input type="checkbox"> Recordarme</label>
+                <a href="#">Perdiste contraseña?</a> </div>
+            
+            <button type="submit" class="btn">Iniciar sesión </button>
+            <p class="error escondido">Error al Iniciar sesión</p>
+            
+            <div class="register-link">
+                <p>No tienes una cuenta? <a href="/register">Registrate</a></p>
+            </div>
+            <div class="contenedor">
+                <img class="logo" src="img/patitas.png" alt="">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="login.js" defer></script>
+</html>

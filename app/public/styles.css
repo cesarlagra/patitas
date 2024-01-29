@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    min-height: 100vh;
+    background-image:
+    radial-gradient(at 48% 37%, hsla(4,69%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 95% 96%, hsla(279,61%,78%,1) 0px, transparent 50%),
+    radial-gradient(at 96% 68%, hsla(176,75%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 95% 35%, hsla(275,99%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 98% 70%, hsla(291,60%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 85% 5%, hsla(292,92%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 83% 84%, hsla(261,70%,69%,1) 0px, transparent 50%);
+    background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #39246744;
+    box-shadow: -5px 0px 10px #000000a9;
+    height: 85px;
+    padding: 5px 10%;
+    width: 100%;
+}
+.logo {
+    height: 98px;
+    width: auto;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+header .imagen{
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+header .navega {
+    list-style: none;
+}
+
+header .navega li{
+    display: inline-block;
+    padding: 0 20px;
+    transition: all 0.3s;
+}
+
+header .navega li:hover{
+    transform: scale(1.1);
+}
+
+header .navega a{
+    font-size: 700;
+    color: #FFD1E3;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+header .navega a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+header .btn {
+    padding-left: 20px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10%;
+    font-family:  'Nunito Sans', sans-serif;
+    background: #AC87C5;
+    color: #FFD1E3;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+header .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px #7848e0b4;
+    background: #ffffff;
+    color: #AC87C5;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project-card {
+    display: block;
+    padding: 20px;
+    background-color: #ffffffb9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.592);
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+}
+
+/* ICONOS DE PERRO Y CHICA */
+.perrito {
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    height: auto; 
+    width: 220px;
+    margin-top: 30px;
+} 
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #39246770;
+    backdrop-filter: blur (10px);
+    box-shadow: -5px 0px 10px #000000ad;
+    display: none;
+    flex-direction: column;
+    padding-top: 35px;
+    align-items:center;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+@media (max-width: 800px){
+    .hideOnMobile {
+        display: none;
+    }
+}
+
+.IconoNav {
+    background-color:  #d2ccdf;
+    box-shadow: -3px 0px 4px #0000006b;
+}
+
+@media (max-width: 800px){
+    .btn {
+        display: none;
+    }
+}
+header .btn-sidebar {
+    padding-left: 20px;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 10%;
+    font-family:  'Nunito Sans', sans-serif;
+    background: #ac87c5;
+    color: #FFD1E3;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+h3 {
+    text-align: center;
+}
+
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left:20px ;
+    margin-right: 20px;
+}
+
+
+
+section img {
+    width: 1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    max-width: 100%;
+}
+
+.alrescate {
+    font-size: 10vw; 
+    font-family: "Anton", sans-serif;
+    margin-left: 5%; 
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    background-image:
+        radial-gradient(at 30% 27%, hsla(0, 0%, 43%, 0.829) 0px, transparent 50%),
+        radial-gradient(at 0% 79%, rgba(241, 126, 132, 0.952) 0px, transparent 50%),
+        radial-gradient(at 84% 93%, rgb(133, 200, 244) 0px, transparent 50%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (max-width: 600px) {
+    section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+#chat {
+    padding: 10px;
+    margin-bottom: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* Estilos para los mensajes */
+  #chat p {
+    margin: 0;
+    padding: 5px;
+    font-family:  'Nunito Sans', sans-serif;
+
+}
+
+#typing {
+    color: #999;
+    font-family:  'Nunito Sans', sans-serif;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(255, 255, 255, 0.541);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 70px;
+    box-shadow: 0px 5px 5px #33333370;
+}
+
+label {
+    margin-bottom: 2px;
+    font-family:  'Nunito Sans', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    
+}
+#SubirAr {
+    margin-top: 15px;
+}
+
+#message {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%; 
+    height: 100px;
+}
+#name {  
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 50%; 
+    height: auto;
+
+}
+.btnEnv {
+        padding-left: 20px;
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10%;
+        font-family:  'Nunito Sans', sans-serif;
+        background: #AC87C5;
+        color: #FFD1E3;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+    
+.btnEnv:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 10px #7848e0b4;
+        background: #ffffff;
+        color: #AC87C5;
+    }
+
+
+
+    .tarjeta {
+        max-width: 400px; 
+        margin: 0 auto; 
+        background-color: #ffffff9d;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px #333333bb;
+        padding: 30px;
+    }
+    
+    
+    .tarjeta img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px; 
+        display: block;
+        margin-top: 10px;
+    }
